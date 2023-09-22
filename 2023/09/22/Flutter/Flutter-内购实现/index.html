@@ -13,22 +13,23 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/09/13/hello-world/"/>
+    <link rel="canonical" href="http://example.com/2023/09/22/flutter/flutter-内购实现/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub . W">
+        <meta name="description" content="基于 in_app_purchase 封装的内购方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/09/13/hello-world/index.html">
+<meta property="og:title" content="Flutter 内购实现">
+<meta property="og:url" content="http://example.com/2023/09/22/Flutter/Flutter-%E5%86%85%E8%B4%AD%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="Jshao&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub . W">
+<meta property="og:description" content="基于 in_app_purchase 封装的内购方法">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-09-13T09:24:39.696Z">
-<meta property="article:modified_time" content="2023-09-22T03:56:36.100Z">
+<meta property="article:published_time" content="2023-09-22T04:04:46.000Z">
+<meta property="article:modified_time" content="2023-09-22T04:06:20.265Z">
 <meta property="article:author" content="yongjie Yuan">
-<meta property="article:tag" content="前端；博客；日志">
+<meta property="article:tag" content="Flutter">
+<meta property="article:tag" content="in_app_purchase">
 <meta name="twitter:card" content="summary">
     
     
@@ -41,7 +42,7 @@
     
     <title>
         
-            Hello World -
+            Flutter 内购实现 -
         
         Jshao&#39;s Motel
     </title>
@@ -372,7 +373,7 @@
 
         <div class="article-title">
             
-                <h1 class="article-title-regular">Hello World</h1>
+                <h1 class="article-title-regular">Flutter 内购实现</h1>
             
             </div>
             
@@ -394,20 +395,51 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-09-13 17:24:39</span>
-        <span class="mobile">2023-09-13 17:24:39</span>
+        <span class="desktop">2023-09-22 12:04:46</span>
+        <span class="mobile">2023-09-22 12:04:46</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-09-22 11:56:36</span>
-            <span class="mobile">2023-09-22 11:56:36</span>
+            <span class="desktop">2023-09-22 12:06:20</span>
+            <span class="mobile">2023-09-22 12:06:20</span>
             <span class="hover-info">Updated</span>
         </span>
     
 
     
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Flutter/">Flutter</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Flutter/">Flutter</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/in-app-purchase/">in_app_purchase</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -429,20 +461,7 @@
 
 
         <div class="article-content markdown-body">
-            <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Welcome-to"><a href="#Welcome-to" class="headerlink" title="Welcome to!"></a>Welcome to!</h2><p>This is my blog, sharing somthing interesting with you.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+            <div class="highlight-container" data-rel="Dart"><figure class="iseeu highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;dart:async&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;dart:io&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:in_app_purchase_storekit/in_app_purchase_storekit.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:in_app_purchase_storekit/store_kit_wrappers.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:flutter/cupertino.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:in_app_purchase/in_app_purchase.dart&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/// <span class="language-markdown">适用于ios端的内购处理方法</span></span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">InAppPurchaseUtils</span> </span>&#123;</span><br><span class="line">  <span class="keyword">late</span> <span class="keyword">final</span> InAppPurchase _inAppPurchase;</span><br><span class="line">  <span class="keyword">late</span> StreamSubscription&lt;<span class="built_in">List</span>&lt;PurchaseDetails&gt;&gt; _subscription;</span><br><span class="line">  <span class="keyword">late</span> <span class="keyword">final</span> Stream&lt;<span class="built_in">List</span>&lt;PurchaseDetails&gt;&gt; purchaseUpdated;</span><br><span class="line">  <span class="comment">/// <span class="language-markdown">产品id</span></span></span><br><span class="line">  <span class="keyword">static</span> <span class="keyword">const</span> <span class="built_in">List</span>&lt;<span class="built_in">String</span>&gt; productIds = [];</span><br><span class="line">  <span class="built_in">List</span>&lt;ProductDetails&gt; _products = &lt;ProductDetails&gt;[];</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">初始化</span></span></span><br><span class="line">  InAppPurchaseUtils.init() &#123;</span><br><span class="line">    _inAppPurchase = InAppPurchase.instance;</span><br><span class="line">    purchaseUpdated = _inAppPurchase.purchaseStream;</span><br><span class="line">    initStoreInfo();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">查询产品信息</span></span></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">返回的数据类型是ProductDetailsResponse</span></span></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">获取详细的产品数据：productDetailResponse.productDetails</span></span></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">Example:</span></span></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">if (productDetailResponse.error != null) &#123;</span></span></span><br><span class="line">  <span class="comment">//       setState(() &#123;</span></span><br><span class="line">  <span class="comment">//         _queryProductError = productDetailResponse.error!.message;</span></span><br><span class="line">  <span class="comment">//         _isAvailable = isAvailable;</span></span><br><span class="line">  <span class="comment">//         _products = productDetailResponse.productDetails;</span></span><br><span class="line">  <span class="comment">//         _purchases = &lt;PurchaseDetails&gt;[];</span></span><br><span class="line">  <span class="comment">//         _notFoundIds = productDetailResponse.notFoundIDs;</span></span><br><span class="line">  <span class="comment">//         _consumables = &lt;String&gt;[];</span></span><br><span class="line">  <span class="comment">//         _purchasePending = false;</span></span><br><span class="line">  <span class="comment">//         _loading = false;</span></span><br><span class="line">  <span class="comment">//       &#125;);</span></span><br><span class="line">  <span class="comment">//       return;</span></span><br><span class="line">  <span class="comment">//     &#125;</span></span><br><span class="line">  Future&lt;ProductDetailsResponse&gt; queryProductDetails() <span class="keyword">async</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">await</span> _inAppPurchase.queryProductDetails(productIds.toSet());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">List</span>&lt;ProductDetails&gt; <span class="keyword">get</span> products =&gt; _products;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">初始化商品（ios端，未集成Android）</span></span></span><br><span class="line">  Future&lt;<span class="keyword">void</span>&gt; initStoreInfo() <span class="keyword">async</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">await</span> isAvailable) &#123;</span><br><span class="line">      <span class="keyword">if</span> (Platform.isIOS) &#123;</span><br><span class="line">        <span class="keyword">final</span> InAppPurchaseStoreKitPlatformAddition iosPlatformAddition =</span><br><span class="line">        _inAppPurchase</span><br><span class="line">            .getPlatformAddition&lt;InAppPurchaseStoreKitPlatformAddition&gt;();</span><br><span class="line">        <span class="keyword">await</span> iosPlatformAddition.setDelegate(ExamplePaymentQueueDelegate());</span><br><span class="line">      &#125;</span><br><span class="line">      queryProductDetails().then((value) &#123;</span><br><span class="line">        <span class="keyword">if</span>(value.error != <span class="keyword">null</span>) &#123;</span><br><span class="line">          _products = value.productDetails;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">内购监听</span></span></span><br><span class="line">  <span class="keyword">void</span> addPurchaseListener(&#123;<span class="keyword">required</span> PurchaseListener listener, ValueChanged? onError&#125;) &#123;</span><br><span class="line">    _subscription = purchaseUpdated.listen((<span class="built_in">List</span>&lt;PurchaseDetails&gt; purchaseDetailsList) &#123;</span><br><span class="line">      _listenToPurchaseUpdated(purchaseDetailsList, listener: listener);</span><br><span class="line">    &#125;,onDone: ()&#123;</span><br><span class="line">      _subscription.cancel();</span><br><span class="line">    &#125;,onError: (<span class="built_in">Object</span> err)&#123;</span><br><span class="line">      <span class="keyword">if</span>(onError != <span class="keyword">null</span>) onError(err);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">购买消耗产品（金币）</span></span></span><br><span class="line">  <span class="keyword">void</span> buyConsumable(ProductDetails productDetails)&#123;</span><br><span class="line">    <span class="keyword">if</span>(Platform.isIOS) &#123;</span><br><span class="line">      _inAppPurchase.buyConsumable(purchaseParam: PurchaseParam(productDetails: productDetails));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">订阅</span></span></span><br><span class="line">  <span class="keyword">void</span> buyNonConsumable(ProductDetails productDetails)&#123;</span><br><span class="line">    <span class="keyword">if</span>(Platform.isIOS) &#123;</span><br><span class="line">      _inAppPurchase.buyNonConsumable(purchaseParam: PurchaseParam(productDetails: productDetails));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">处理内购</span></span></span><br><span class="line">  Future&lt;<span class="keyword">void</span>&gt; _listenToPurchaseUpdated(</span><br><span class="line">      <span class="built_in">List</span>&lt;PurchaseDetails&gt; purchaseDetailsList, &#123;<span class="keyword">required</span> PurchaseListener listener&#125;) <span class="keyword">async</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">final</span> PurchaseDetails purchaseDetails <span class="keyword">in</span> purchaseDetailsList) &#123;</span><br><span class="line">      <span class="keyword">if</span> (purchaseDetails.status == PurchaseStatus.pending) &#123;</span><br><span class="line">        <span class="keyword">if</span>(listener.onPending != <span class="keyword">null</span>) listener.onPending!();</span><br><span class="line">        <span class="comment">// showPendingUI();</span></span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(listener.onPendingComplete != <span class="keyword">null</span>) listener.onPendingComplete!();</span><br><span class="line">        <span class="keyword">if</span> (purchaseDetails.status == PurchaseStatus.error) &#123;</span><br><span class="line">          <span class="keyword">if</span>(listener.onError != <span class="keyword">null</span>) listener.onError!(purchaseDetails.error);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (purchaseDetails.status == PurchaseStatus.purchased ||</span><br><span class="line">            purchaseDetails.status == PurchaseStatus.restored) &#123;</span><br><span class="line">          listener.onPurchased(purchaseDetails);</span><br><span class="line">          <span class="comment">// final bool valid = await _verifyPurchase(purchaseDetails);</span></span><br><span class="line">          <span class="comment">// if (valid) &#123;</span></span><br><span class="line">          <span class="comment">//   deliverProduct(purchaseDetails);</span></span><br><span class="line">          <span class="comment">// &#125; else &#123;</span></span><br><span class="line">          <span class="comment">//   _handleInvalidPurchase(purchaseDetails);</span></span><br><span class="line">          <span class="comment">//   return;</span></span><br><span class="line">          <span class="comment">// &#125;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// if (Platform.isAndroid) &#123;</span></span><br><span class="line">        <span class="comment">//   if (!_kAutoConsume &amp;&amp; purchaseDetails.productID == _kConsumableId) &#123;</span></span><br><span class="line">        <span class="comment">//     final InAppPurchaseAndroidPlatformAddition androidAddition =</span></span><br><span class="line">        <span class="comment">//     _inAppPurchase.getPlatformAddition&lt;</span></span><br><span class="line">        <span class="comment">//         InAppPurchaseAndroidPlatformAddition&gt;();</span></span><br><span class="line">        <span class="comment">//     await androidAddition.consumePurchase(purchaseDetails);</span></span><br><span class="line">        <span class="comment">//   &#125;</span></span><br><span class="line">        <span class="comment">// &#125;</span></span><br><span class="line">        <span class="keyword">if</span> (purchaseDetails.pendingCompletePurchase) &#123;</span><br><span class="line">          <span class="keyword">await</span> _inAppPurchase.completePurchase(purchaseDetails);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">内购服务是否可用</span></span></span><br><span class="line">  Future&lt;<span class="built_in">bool</span>&gt; <span class="keyword">get</span> isAvailable <span class="keyword">async</span> =&gt; <span class="keyword">await</span> _inAppPurchase.isAvailable();</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">取消内购服务监听</span></span></span><br><span class="line">  <span class="comment">/// <span class="language-markdown">dispose 时可调用</span></span></span><br><span class="line">  <span class="keyword">void</span> cancel()&#123;</span><br><span class="line">    <span class="keyword">if</span> (Platform.isIOS) &#123;</span><br><span class="line">      <span class="keyword">final</span> InAppPurchaseStoreKitPlatformAddition iosPlatformAddition =</span><br><span class="line">      _inAppPurchase</span><br><span class="line">          .getPlatformAddition&lt;InAppPurchaseStoreKitPlatformAddition&gt;();</span><br><span class="line">      iosPlatformAddition.setDelegate(<span class="keyword">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    _subscription.cancel();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PurchaseListener</span> </span>&#123;</span><br><span class="line">  <span class="comment">/// <span class="language-markdown">等待</span></span></span><br><span class="line">  VoidCallback? onPending;</span><br><span class="line">  ValueChanged? onError;</span><br><span class="line">  <span class="comment">/// <span class="language-markdown">购买事件</span></span></span><br><span class="line">  <span class="keyword">late</span> ValueChanged&lt;PurchaseDetails&gt; onPurchased;</span><br><span class="line">  <span class="comment">///<span class="language-markdown">等待结束</span></span></span><br><span class="line">  VoidCallback? onPendingComplete;</span><br><span class="line">  PurchaseListener(&#123;<span class="keyword">required</span> <span class="keyword">this</span>.onPurchased,<span class="keyword">this</span>.onPending,<span class="keyword">this</span>.onError,<span class="keyword">this</span>.onPendingComplete&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ExamplePaymentQueueDelegate</span> <span class="keyword">implements</span> <span class="title">SKPaymentQueueDelegateWrapper</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="built_in">bool</span> shouldContinueTransaction(</span><br><span class="line">      SKPaymentTransactionWrapper transaction, SKStorefrontWrapper storefront) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="built_in">bool</span> shouldShowPriceConsent() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
         </div>
 
@@ -450,18 +469,18 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> Hello World</li>
+        <li><strong>Title:</strong> Flutter 内购实现</li>
         <li><strong>Author:</strong> Jared Yuan</li>
         <li><strong>Created at
-                :</strong> 2023-09-13 17:24:39</li>
+                :</strong> 2023-09-22 12:04:46</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2023-09-22 11:56:36
+                    :</strong> 2023-09-22 12:06:20
             </li>
         
         <li>
-            <strong>Link:</strong> https://redefine.ohevan.com/2023/09/13/hello-world/
+            <strong>Link:</strong> https://redefine.ohevan.com/2023/09/22/Flutter/Flutter-内购实现/
         </li>
         <li>
             <strong>
@@ -479,27 +498,39 @@
         
 
         
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/Flutter/">#Flutter</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/in-app-purchase/">#in_app_purchase</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
 
         
 
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2023/09/13/Flutter/Flutter_state_01/"
+                
+                    <div class="article-next">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/09/22/Flutter/Flutter-%E8%BF%9B%E9%98%B6/"
                         >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Flutter State-01</span>
-                                <span class="post-nav-item">Prev posts</span>
+                                <span class="post-nav-title-item">Flutter 进阶</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
                             </span>
                         </a>
                     </div>
-                
                 
             </div>
         
@@ -557,8 +588,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">Hello World</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Welcome-to"><span class="nav-text">Welcome to!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <div class="page-title">Flutter 内购实现</div>
+        
 
     </div>
 </div>
