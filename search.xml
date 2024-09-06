@@ -43,18 +43,34 @@
 </ol>
 <div class="highlight-container" data-rel="Dart"><figure class="iseeu highlight dart"><table><tr><td class="code"><pre><span class="line">T first&lt;T&gt;(<span class="built_in">List</span>&lt;T&gt; ts) &#123;</span><br><span class="line">  <span class="comment">// 进行一些初始工作或错误检查，然后...</span></span><br><span class="line">  T tmp = ts[<span class="number">0</span>];</span><br><span class="line">  <span class="comment">// 进行一些额外的检查或处理...</span></span><br><span class="line">  <span class="keyword">return</span> tmp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<div class="note-large default"><div class="notel-title"><i class="notel-icon fa-solid fa-info"></i><p>Tips</p>
-</div><div class="notel-content"><p><T> 表示这是一个泛型方法，T 是类型参数的名称，</p>
-</div></div>
+
+  <div class="note-large default">
+    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
+      <i class="notel-icon fa-solid fa-info"></i><p>Tips</p>
+
+    </div>
+    <div class="notel-content">
+      <p><T> 表示这是一个泛型方法，T 是类型参数的名称，</p>
+
+    </div>
+  </div>
 
 <ol start="2">
 <li>Java 的泛型方法</li>
 </ol>
 <div class="highlight-container" data-rel="Dart"><figure class="iseeu highlight dart"><table><tr><td class="code"><pre><span class="line">&lt;T&gt; T first(<span class="built_in">List</span>&lt;T&gt; ts) &#123;</span><br><span class="line"><span class="comment">// 进行一些初始工作或错误检查，然后...</span></span><br><span class="line">T tmp = ts.<span class="keyword">get</span>(<span class="number">0</span>);</span><br><span class="line"><span class="comment">// 进行一些额外的检查或处理...</span></span><br><span class="line"><span class="keyword">return</span> tmp;</span><br><span class="line">&#125;</span><br><span class="line">&lt;T&gt; 位于方法返回类型之前，表示这是一个泛型方法，T 是类型参数的名称，可以替换成其他合法的标识符。</span><br></pre></td></tr></table></figure></div>
 
-<h2 id="Mixin-混入"><a href="#Mixin-混入" class="headerlink" title="Mixin(混入)"></a>Mixin(混入)</h2><div class="note-large default"><div class="notel-title"><i class="notel-icon fa-solid fa-info"></i><p>Tips</p>
-</div><div class="notel-content"><p>作用：解决无需多重继承即可拥有功能方法<br>混合使用 with 关键字，with 后面可以是 class、abstract class 和 mixin 的类型</p>
-</div></div>
+<h2 id="Mixin-混入"><a href="#Mixin-混入" class="headerlink" title="Mixin(混入)"></a>Mixin(混入)</h2>
+  <div class="note-large default">
+    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
+      <i class="notel-icon fa-solid fa-info"></i><p>Tips</p>
+
+    </div>
+    <div class="notel-content">
+      <p>作用：解决无需多重继承即可拥有功能方法<br>混合使用 with 关键字，with 后面可以是 class、abstract class 和 mixin 的类型</p>
+
+    </div>
+  </div>
 
 <div class="highlight-container" data-rel="Dart"><figure class="iseeu highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="comment">// mixin 声明的类</span></span><br><span class="line"><span class="keyword">mixin</span> a &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 普通的类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">b</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">c</span> <span class="title">with</span> <span class="title">a</span>, <span class="title">b</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure></div>
 
@@ -84,25 +100,6 @@
         <tag>Dart</tag>
         <tag>小记</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/09/13/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Welcome-to"><a href="#Welcome-to" class="headerlink" title="Welcome to!"></a>Welcome to!</h2><p>This is my blog, sharing somthing interesting with you.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
   </entry>
   <entry>
     <title>Flutter 内购实现</title>
@@ -161,12 +158,39 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/09/13/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Welcome-to"><a href="#Welcome-to" class="headerlink" title="Welcome to!"></a>Welcome to!</h2><p>This is my blog, sharing somthing interesting with you.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Flutter State-01</title>
     <url>/2023/09/13/Flutter/Flutter_state_01/</url>
-    <content><![CDATA[<div class="note-large default"><div class="notel-title"><i class="notel-icon fa-solid fa-info"></i><p>参考</p>
-</div><div class="notel-content"><p><a class="link"   href="https://www.bilibili.com/video/BV11p4y157ar/?spm_id_from=333.999.0.0" >王叔 FLutter 状态管理篇 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+    <content><![CDATA[
+  <div class="note-large default">
+    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
+      <i class="notel-icon fa-solid fa-info"></i><p>参考</p>
+
+    </div>
+    <div class="notel-content">
+      <p><a class="link"   href="https://www.bilibili.com/video/BV11p4y157ar/?spm_id_from=333.999.0.0" >王叔 FLutter 状态管理篇 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p><a class="link"   href="https://www.yuque.com/jshao-n4geo/umd53l/lo1z4549vr6tseey" >语雀的个人草稿笔记 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-</div></div>
+
+    </div>
+  </div>
 
 <h2 id="自定义-Provider"><a href="#自定义-Provider" class="headerlink" title="自定义 Provider"></a>自定义 Provider</h2><div class="highlight-container" data-rel="Dart"><figure class="iseeu highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CustomProvider</span>&lt;<span class="title">T</span> <span class="keyword">extends</span> <span class="title">Listenable</span>&gt; <span class="keyword">extends</span> <span class="title">StatefulWidget</span> </span>&#123;</span><br><span class="line">  <span class="keyword">final</span> T <span class="built_in">Function</span>() create;</span><br><span class="line">  <span class="keyword">final</span> Widget child;</span><br><span class="line">  <span class="keyword">const</span> CustomProvider(&#123;Key? key, <span class="keyword">required</span> <span class="keyword">this</span>.child, <span class="keyword">required</span> <span class="keyword">this</span>.create&#125;) : <span class="keyword">super</span>(key: key);</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  State&lt;CustomProvider&gt; createState() =&gt; _CustomState&lt;T&gt;();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">static</span> T of&lt;T&gt;(BuildContext context,&#123;<span class="built_in">bool</span> listen = <span class="keyword">true</span>&#125;) &#123;</span><br><span class="line">    <span class="keyword">if</span>(listen) &#123;</span><br><span class="line">      <span class="keyword">return</span> context.dependOnInheritedWidgetOfExactType&lt;CustomInheritedWidget&lt;T&gt;&gt;()!.model;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> (context.getElementForInheritedWidgetOfExactType&lt;CustomInheritedWidget&lt;T&gt;&gt;()!.widget <span class="keyword">as</span> CustomInheritedWidget).model;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_CustomState</span>&lt;<span class="title">T</span> <span class="keyword">extends</span> <span class="title">Listenable</span>&gt; <span class="keyword">extends</span> <span class="title">State</span>&lt;<span class="title">CustomProvider</span>&lt;<span class="title">T</span>&gt;&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">late</span> T model;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> initState() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement initState</span></span><br><span class="line">    <span class="keyword">super</span>.initState();</span><br><span class="line">    model = widget.create();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> AnimatedBuilder(</span><br><span class="line">      animation: model,</span><br><span class="line">      builder: (BuildContext context, Widget? child) &#123;</span><br><span class="line">        <span class="keyword">return</span> CustomInheritedWidget(model: model,</span><br><span class="line">            child: widget.child);</span><br><span class="line">      &#125;,</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CustomInheritedWidget</span>&lt;<span class="title">T</span>&gt; <span class="keyword">extends</span> <span class="title">InheritedWidget</span> </span>&#123;</span><br><span class="line">  <span class="keyword">final</span> T model;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> CustomInheritedWidget(&#123;<span class="keyword">super</span>.key, <span class="keyword">required</span> <span class="keyword">this</span>.model,<span class="keyword">required</span> <span class="keyword">super</span>.child&#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">static</span> CustomInheritedWidget of&lt;T&gt;(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> context.dependOnInheritedWidgetOfExactType&lt;CustomInheritedWidget&lt;T&gt;&gt;()!;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="built_in">bool</span> updateShouldNotify(<span class="keyword">covariant</span> InheritedWidget oldWidget) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;update&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/// <span class="language-markdown">extension如果没有取名字只能在本文件中使用，属于私有扩展。起名字可以供其他外部使用</span></span></span><br><span class="line"><span class="keyword">extension</span> Consumer <span class="keyword">on</span> BuildContext &#123;</span><br><span class="line">  T watch&lt;T&gt;() =&gt; CustomProvider.of(<span class="keyword">this</span>);</span><br><span class="line">  T read&lt;T&gt;() =&gt; CustomProvider.of(<span class="keyword">this</span>,listen: <span class="keyword">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 ]]></content>
